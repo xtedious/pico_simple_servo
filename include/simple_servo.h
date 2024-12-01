@@ -33,6 +33,7 @@ Servo *servo_config(uint gpio_pin, uint servo_range, float pwm_time_min,
 Servo *default_servo_config(uint gpio_pin);
 // Servo Functions
 
+// Makes the servo move to the desired angle
 int servo_angle(Servo *servo, uint angle);
 
 #endif // _SIMPLE_SERVO_H_
