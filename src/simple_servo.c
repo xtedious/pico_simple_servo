@@ -92,7 +92,7 @@ Servo *servo_config(uint gpio_pin, uint servo_range, float pwm_time_min,
     return &servo;
 }
 
-Servo *default_servo_config(uint gpio_pin) {
+Servo default_servo_config(uint gpio_pin) {
 
     static pwm_properties settings;
     settings.pwm_freq = 50;
@@ -106,5 +106,5 @@ Servo *default_servo_config(uint gpio_pin) {
 
     servo_init(&servo);
 
-    return &servo;
+    return servo;
 }

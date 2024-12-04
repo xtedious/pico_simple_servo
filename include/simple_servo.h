@@ -30,7 +30,7 @@ Servo *servo_config(uint gpio_pin, uint servo_range, float pwm_time_min,
 
 // Configures a 180 degree servo with 50Hz PWM frequency and time_range between
 // 0,45-2.1ms
-Servo *default_servo_config(uint gpio_pin);
+Servo default_servo_config(uint gpio_pin);
 // Servo Functions
 
 // Makes the servo move to the desired angle
